@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ASL Meet Assistant</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div id="header">
+    <span id="header-title">🤟 ASL Meet Assistant</span>
+    <div id="header-actions">
+      <a href="https://signspeak.pages.dev" target="_blank" id="about-btn" title="Learn more about ASL Assistant">🌐
+        About</a>
+      <button id="close-panel-btn" title="Close">✕</button>
+    </div>
+    <span id="status-dot" class="offline">● Not on Meet</span>
+  </div>
+
+  <!-- Not on Meet warning -->
+  <div id="not-meet-warning" style="display:none;">
+    <div id="warning-box">
+      <div style="font-size:28px;">⚠️</div>
+      <div>Please open this extension during a Google Meet call.</div>
+      <a href="https://meet.google.com" target="_blank" id="open-meet-btn">Open Google Meet</a>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div id="main-content">
+
+    <!-- Camera -->
+    <div id="camera-section">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="canvas"></canvas>
+      <div id="camera-status">Starting camera...</div>
+    </div>
+
+    <!-- Detection display -->
+    <div id="detection-section">
+      <div id="detected-letter">—</div>
+      <div id="detection-info">
+        <div id="confidence">Confidence: —</div>
+        <div id="mode-badge">SIGN MODE</div>
+      </div>
+    </div>
+
+    <!-- Accumulated text -->
+    <div id="text-bar">
+      <div id="text-label">Detected Text</div>
+      <div id="accumulated-text">Start signing...</div>
+    </div>
+
+    <!-- Buttons -->
+    <div id="buttons">
+      <button id="send-chat-btn" style="background:#3ddc84; color:#0d0d0d; font-weight:bold; grid-column: span 2;">💬
+        Send to Meet Chat</button>
+      <button id="clear-btn">🗑 Clear</button>
+      <button id="copy-btn">📋 Copy</button>
+      <button id="space-btn">Space</button>
+      <button id="speak-btn">🔊 Speak</button>
+      <button id="ai-fix-btn">✨ AI Fix</button>
+    </div>
+
+    <!-- Stats bar -->
+    <div id="stats-bar">
+      <span id="session-count">Signs: 0</span>
+      <span id="streak-display">Streak: —</span>
+      <span id="session-time">0:00</span>
+    </div>
+
+    <!-- Chatbot -->
+    <div id="chatbot-section">
+      <div id="chatbot-header">
+        <span id="chatbot-title">💬 AI ASL Assistant</span>
+        <button id="toggle-chat-btn">Hide</button>
+      </div>
+
+      <div id="chat-body">
+        <div id="ai-status" class="ai-status">AI: checking Chrome AI…</div>
+        <div id="chat-messages">
+          <div class="bot-msg">Hi! I'm your ASL assistant. Ask me anything about using this extension!</div>
+        </div>
+
+        <div id="quick-replies">
+          <button class="quick-btn" data-msg="how do i use this">How to use?</button>
+          <button class="quick-btn" data-msg="what letters are supported">Letters?</button>
+          <button class="quick-btn" data-msg="why is my hand not detected">Not detecting?</button>
+          <button class="quick-btn" data-msg="tips for better signing">Tips</button>
+          <button class="quick-btn" data-msg="does this work on google meet">Meet?</button>
+          <button class="quick-btn" data-msg="camera not working">Camera help</button>
+        </div>
+
+        <div id="chat-attachments">
+          <input id="image-input" type="file" accept="image/png,image/jpeg,image/webp" hidden />
+          <button id="image-btn" title="Ask AI about an image">🖼 Image</button>
+          <button id="voice-btn" title="Record a voice message">🎙 Voice</button>
+          <span id="voice-status"></span>
+        </div>
+        <div id="chat-input-row">
+          <input id="chat-input" type="text" placeholder="Ask the AI anything..." autocomplete="off" maxlength="4000" />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- All scripts local — no CDN -->
+  <script src="mediapipe/hands.js"></script>
+  <script src="mediapipe/camera_utils.js"></script>
+  <script src="mediapipe/drawing_utils.js"></script>
+  <script src="popup.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+
+</html>

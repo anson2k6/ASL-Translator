@@ -1,0 +1,1165 @@
+{
+  "intents": [
+    {
+      "patterns": [
+        "how do i use this",
+        "how to use",
+        "how does this work",
+        "get started",
+        "what do i do"
+      ],
+      "response": [
+        "Show your hand to the webcam and hold an ASL sign steady. The big letter box updates in real time. Hold still for about a second to add it to the text bar!",
+        "Open the extension during a Google Meet call, allow camera access, then sign letters or words slowly and steadily. Hold each sign for about a second to confirm it."
+      ]
+    },
+    {
+      "patterns": [
+        "what are the shortcuts",
+        "shortcuts",
+        "keyboard shortcuts",
+        "buttons"
+      ],
+      "response": "Clear resets the text bar. Copy sends detected text to your clipboard. Space adds a space between words. That is all you need!"
+    },
+    {
+      "patterns": [
+        "how do i start detection",
+        "start",
+        "begin detection",
+        "detection not starting"
+      ],
+      "response": "Detection starts automatically the moment the popup opens. Just show your hand to the camera — no button needed."
+    },
+    {
+      "patterns": [
+        "how do i clear text",
+        "clear",
+        "reset text",
+        "delete text",
+        "erase"
+      ],
+      "response": "Click the Clear button below the text bar. It resets everything and saves the cleared state."
+    },
+    {
+      "patterns": [
+        "how do i install this",
+        "install",
+        "setup",
+        "add to chrome",
+        "load extension"
+      ],
+      "response": "Go to chrome://extensions in Chrome, enable Developer Mode in the top right, click Load Unpacked, and select the asl-meet-extension folder."
+    },
+    {
+      "patterns": [
+        "what letters are supported",
+        "which letters",
+        "what signs",
+        "what can it detect",
+        "all letters",
+        "alphabet",
+        "what words"
+      ],
+      "response": [
+        "All 26 ASL letters A through Z are supported, plus 80 common words and phrases like hello, thank-you, please, water, order, menu, and more — 106 signs total!",
+        "The extension supports A to Z plus 80 everyday words including food items, greetings, and restaurant phrases. Say hello, order food, or ask for water all through sign language!"
+      ]
+    },
+    {
+      "patterns": [
+        "what words can it detect",
+        "words",
+        "phrases",
+        "common words"
+      ],
+      "response": "Besides A-Z, it detects 80 words including: hello, bye, thank-you, please, no, sorry, water, drink, eat, menu, order, bill, hot, cold, spicy, and many more food and conversation signs."
+    },
+    {
+      "patterns": [
+        "why is detection wrong",
+        "wrong letter",
+        "incorrect",
+        "detecting wrong",
+        "wrong sign",
+        "misreading"
+      ],
+      "response": [
+        "Try better lighting, keep your hand centered, and hold the sign extra still. Some letters look similar — U vs V, M vs N, A vs S — so hand position matters a lot.",
+        "Similar looking letters like U and V or M and N can be confused. Make sure your hand is well lit and hold the sign steady for 1 to 2 seconds."
+      ]
+    },
+    {
+      "patterns": [
+        "how to improve accuracy",
+        "better accuracy",
+        "improve detection",
+        "more accurate",
+        "accuracy"
+      ],
+      "response": [
+        "Good lighting is the biggest factor. Keep your hand against a plain background, hold signs still, and make sure your full hand is visible in frame.",
+        "Three things help most: good front lighting, plain background, and holding each sign steady for a full second before moving on."
+      ]
+    },
+    {
+      "patterns": [
+        "what is confidence score",
+        "confidence",
+        "percentage",
+        "what does percent mean",
+        "confidence score"
+      ],
+      "response": "The confidence score shows how certain the model is. Above 70 percent means the detection is reliable. Below 50 percent means try adjusting your hand angle or lighting."
+    },
+    {
+      "patterns": [
+        "why is my hand not detected",
+        "hand not detected",
+        "not detecting hand",
+        "no detection",
+        "cant detect",
+        "not seeing hand"
+      ],
+      "response": [
+        "Make sure your hand is fully visible and well lit. Try moving closer to the camera. Dark backgrounds and front facing light help a lot.",
+        "Check that Chrome has camera permission for the extension. Also make sure no other app is using the camera at the same time."
+      ]
+    },
+    {
+      "patterns": [
+        "does this work on google meet",
+        "google meet",
+        "meet",
+        "works on meet",
+        "use with meet"
+      ],
+      "response": [
+        "Yes! This extension is built specifically for Google Meet. Open it while on a Meet call and the detection runs alongside your video.",
+        "It works on meet.google.com. Click the extension icon during your Meet call — detection runs in the popup without affecting your video or audio."
+      ]
+    },
+    {
+      "patterns": [
+        "will it affect my video call",
+        "slow down call",
+        "affect call",
+        "lag on call",
+        "affect meet"
+      ],
+      "response": "The extension runs in its own popup window completely separate from Meet. Your video and audio quality will not be affected at all."
+    },
+    {
+      "patterns": [
+        "can others see my detection",
+        "others see",
+        "visible to others",
+        "share detection",
+        "see my signs"
+      ],
+      "response": "No — the detection only shows in your popup. Others in the Meet call cannot see it unless you deliberately share your screen."
+    },
+    {
+      "patterns": [
+        "does it use my camera",
+        "camera",
+        "webcam",
+        "uses camera",
+        "camera access"
+      ],
+      "response": "Yes, it accesses your webcam to detect hand signs. All processing happens locally in your browser — nothing is sent to any external server. Your privacy is protected."
+    },
+    {
+      "patterns": [
+        "will it slow down my meet",
+        "slow",
+        "performance",
+        "slow meet",
+        "lag"
+      ],
+      "response": "It uses minimal resources. If you notice slowness, close other Chrome tabs to free up memory."
+    },
+    {
+      "patterns": [
+        "how do i sign the letter a",
+        "sign a",
+        "how to sign",
+        "show me a sign",
+        "how to sign letter"
+      ],
+      "response": "For A: make a fist with your thumb resting on the side of your index finger. Keep all fingers curled in tightly."
+    },
+    {
+      "patterns": [
+        "what is asl",
+        "asl",
+        "american sign language",
+        "what is sign language"
+      ],
+      "response": "ASL is American Sign Language — a complete visual language used by the Deaf community in the US and Canada. It has its own grammar and structure, different from English."
+    },
+    {
+      "patterns": [
+        "tips for better signing",
+        "tips",
+        "signing tips",
+        "advice",
+        "help signing"
+      ],
+      "response": [
+        "Keep your hand at chest level, face the camera straight on, use good lighting, and practice each letter slowly before speeding up.",
+        "Best tips: good front lighting, plain background, hold signs still for 1 second, and keep your full hand in frame at all times."
+      ]
+    },
+    {
+      "patterns": [
+        "how long to learn asl",
+        "learn asl",
+        "how long",
+        "time to learn"
+      ],
+      "response": "Basic ASL fingerspelling A to Z can be learned in a few days of practice. Full conversational ASL takes months to years of study."
+    },
+    {
+      "patterns": [
+        "what signs are hardest",
+        "hardest signs",
+        "difficult letters",
+        "hard letters",
+        "hardest letters"
+      ],
+      "response": "J and Z are hardest because they require motion. G, H, P, and Q are also tricky because of their orientation or similarity to other signs."
+    },
+    {
+      "patterns": [
+        "camera not working",
+        "camera error",
+        "no camera",
+        "webcam not working",
+        "camera permission"
+      ],
+      "response": "Make sure Chrome has camera permission. Go to chrome://settings/content/camera and allow access. Also check no other app is using the camera at the same time."
+    },
+    {
+      "patterns": [
+        "extension not opening",
+        "not opening",
+        "popup not opening",
+        "wont open",
+        "not working"
+      ],
+      "response": "Try reloading the extension at chrome://extensions. If that fails, remove and re-add it by clicking Load Unpacked again."
+    },
+    {
+      "patterns": [
+        "letters jumping around",
+        "flickering",
+        "jumping",
+        "unstable",
+        "keeps changing"
+      ],
+      "response": "This is normal for similar-looking letters. Hold your sign extra still and make sure lighting is consistent. The smoothing buffer helps but needs a steady hand."
+    },
+    {
+      "patterns": [
+        "detection is slow",
+        "slow detection",
+        "lag detection",
+        "delayed",
+        "slow response"
+      ],
+      "response": "Close other Chrome tabs and extensions to free up memory. Make sure your device is not on battery saver mode as that throttles performance."
+    },
+    {
+      "patterns": [
+        "extension disappeared",
+        "gone",
+        "missing",
+        "not in toolbar",
+        "cant find extension"
+      ],
+      "response": "Click the puzzle piece icon in the Chrome toolbar and pin ASL Meet Assistant to keep it always visible."
+    },
+    {
+      "patterns": [
+        "hello",
+        "hi",
+        "hey"
+      ],
+      "response": "Hi there! I'm your ASL assistant. Ask me about detection, supported signs, tips, or Google Meet compatibility!"
+    },
+    {
+      "patterns": [
+        "thank you",
+        "thanks",
+        "thank-you"
+      ],
+      "response": "You're welcome! Keep practicing — consistency is the key to mastering ASL fingerspelling!"
+    },
+    {
+      "patterns": [
+        "what is american sign language",
+        "tell me about asl"
+      ],
+      "response": [
+        "ASL stands for American Sign Language. It is a visual language that uses hand shapes, movement, facial expressions, and body position."
+      ]
+    },
+    {
+      "patterns": [
+        "what is this project",
+        "what does this project do",
+        "what is asl meet assistant"
+      ],
+      "response": [
+        "ASL Meet Assistant helps users communicate during Google Meet by detecting supported hand signs, building text, and providing accessibility tools."
+      ]
+    },
+    {
+      "patterns": [
+        "how do i start",
+        "how do i get started",
+        "start the assistant"
+      ],
+      "response": [
+        "Open Google Meet, allow camera access, then open the ASL Meet Assistant panel and place your signing hand clearly in view."
+      ]
+    },
+    {
+      "patterns": [
+        "camera does not work"
+      ],
+      "response": [
+        "Allow camera permission, close other apps using the webcam, then reload the Meet page and reopen the assistant."
+      ]
+    },
+    {
+      "patterns": [
+        "allow camera"
+      ],
+      "response": [
+        "When Chrome asks for camera access, choose Allow. If permission was blocked, open Chrome site settings for Meet and allow Camera."
+      ]
+    },
+    {
+      "patterns": [
+        "no hand detected",
+        "it cannot see my hand"
+      ],
+      "response": [
+        "Keep one hand fully inside the camera frame, use good lighting, avoid fast movement, and keep the hand at a comfortable distance from the camera."
+      ]
+    },
+    {
+      "patterns": [
+        "incorrect letter",
+        "wrong prediction"
+      ],
+      "response": [
+        "Hold the sign steadily and keep the whole hand visible. The model uses landmark features, so occlusion, lighting, and hand position can affect predictions."
+      ]
+    },
+    {
+      "patterns": [
+        "low confidence",
+        "confidence is low",
+        "why low confidence"
+      ],
+      "response": [
+        "Low confidence usually means the hand pose is unclear or changing. Hold the sign still and improve lighting and camera position."
+      ]
+    },
+    {
+      "patterns": [
+        "improve accuracy",
+        "make detection better",
+        "increase detection accuracy"
+      ],
+      "response": [
+        "Use good front lighting, keep your hand centered, avoid cluttered backgrounds, and hold each sign steadily until it is confirmed."
+      ]
+    },
+    {
+      "patterns": [
+        "supported letters",
+        "which letters can it detect"
+      ],
+      "response": [
+        "The supplied letter model contains classes A through Y. Z is not included in the supplied letter model."
+      ]
+    },
+    {
+      "patterns": [
+        "does it detect z",
+        "can it detect z",
+        "letter z"
+      ],
+      "response": [
+        "The supplied trained letter model has classes A through Y, so Z is not currently part of that model."
+      ]
+    },
+    {
+      "patterns": [
+        "one hand",
+        "can i use one hand",
+        "do i need both hands"
+      ],
+      "response": [
+        "The current MediaPipe configuration uses one hand, so one clearly visible hand is sufficient for the letter detector."
+      ]
+    },
+    {
+      "patterns": [
+        "where should i place my hand",
+        "hand position",
+        "camera position for hand"
+      ],
+      "response": [
+        "Place your hand in the center of the camera view with the entire hand visible and enough space around the fingers."
+      ]
+    },
+    {
+      "patterns": [
+        "lighting tips",
+        "best lighting",
+        "lighting for detection"
+      ],
+      "response": [
+        "Use even front lighting. Avoid strong backlighting, very dark rooms, and harsh shadows across the hand."
+      ]
+    },
+    {
+      "patterns": [
+        "background tips",
+        "best background",
+        "background for detection"
+      ],
+      "response": [
+        "A simple uncluttered background can make hand tracking more stable. Keep the hand visually distinct from the background."
+      ]
+    },
+    {
+      "patterns": [
+        "how long hold sign",
+        "how long should i hold",
+        "hold sign"
+      ],
+      "response": [
+        "Hold each sign steadily for about a second so the smoothing and stability logic can confirm it."
+      ]
+    },
+    {
+      "patterns": [
+        "why duplicate letters",
+        "duplicate letter",
+        "same letter twice"
+      ],
+      "response": [
+        "If a sign is held too long, it can be confirmed more than once. Use a short pause or change the hand pose between letters."
+      ]
+    },
+    {
+      "patterns": [
+        "clear detected text",
+        "clear text",
+        "delete detected text"
+      ],
+      "response": [
+        "Use the Clear button in the assistant to remove the accumulated detected text."
+      ]
+    },
+    {
+      "patterns": [
+        "copy detected text",
+        "copy text",
+        "copy the result"
+      ],
+      "response": [
+        "Use the Copy button to place the accumulated detected text on your clipboard."
+      ]
+    },
+    {
+      "patterns": [
+        "add space",
+        "space between words",
+        "insert space"
+      ],
+      "response": [
+        "Use the Space button after finishing a word to add a space before the next word."
+      ]
+    },
+    {
+      "patterns": [
+        "what is ai fix",
+        "ai fix",
+        "how does ai fix work"
+      ],
+      "response": [
+        "AI Fix uses Chrome's built-in on-device AI to clean obvious recognition noise in the detected sequence. It should not invent content when the sequence is unclear."
+      ]
+    },
+    {
+      "patterns": [
+        "is ai free",
+        "does ai cost money",
+        "is chrome ai free"
+      ],
+      "response": [
+        "The ASL detection does not require a paid AI API. Chrome's built-in on-device AI is used when supported by the browser and device."
+      ]
+    },
+    {
+      "patterns": [
+        "does ai need api key",
+        "api key",
+        "do i need an api"
+      ],
+      "response": [
+        "No API key is required for the on-device Chrome AI path used by this project."
+      ]
+    },
+    {
+      "patterns": [
+        "is my data uploaded",
+        "does data leave computer",
+        "privacy"
+      ],
+      "response": [
+        "The local ASL model runs through a localhost bridge and does not require a cloud API. AI availability depends on Chrome's on-device AI support."
+      ]
+    },
+    {
+      "patterns": [
+        "is camera recorded",
+        "does it save camera",
+        "camera privacy"
+      ],
+      "response": [
+        "The extension uses the camera for live hand tracking. It does not intentionally save the camera stream as a video file."
+      ]
+    },
+    {
+      "patterns": [
+        "does it need internet",
+        "internet required",
+        "offline detection"
+      ],
+      "response": [
+        "The supplied ASL letter model is local. The Chrome AI chatbot may require Chrome's on-device AI model to be available on the device; Google Meet itself requires internet."
+      ]
+    },
+    {
+      "patterns": [
+        "does it work with meet"
+      ],
+      "response": [
+        "Open a Google Meet call and then open the ASL Meet Assistant panel. The extension is designed for Meet pages."
+      ]
+    },
+    {
+      "patterns": [
+        "how to install",
+        "install extension",
+        "installation"
+      ],
+      "response": [
+        "Extract the project, open chrome://extensions, enable Developer mode, choose Load unpacked, and select the project folder."
+      ]
+    },
+    {
+      "patterns": [
+        "reload extension",
+        "refresh extension",
+        "extension not updating"
+      ],
+      "response": [
+        "Open chrome://extensions and click Reload for ASL Meet Assistant, then refresh the Google Meet tab."
+      ]
+    },
+    {
+      "patterns": [
+        "extension not showing",
+        "assistant not visible",
+        "panel not showing"
+      ],
+      "response": [
+        "Make sure you are on a meet.google.com page, reload the extension, refresh Meet, and open the assistant again."
+      ]
+    },
+    {
+      "patterns": [
+        "close assistant",
+        "hide assistant",
+        "remove panel"
+      ],
+      "response": [
+        "Use the Close button in the assistant panel. You can reopen it from the extension when needed."
+      ]
+    },
+    {
+      "patterns": [
+        "session text",
+        "saved text",
+        "previous text"
+      ],
+      "response": [
+        "The extension can keep the accumulated text in Chrome storage so it can be restored during the session."
+      ]
+    },
+    {
+      "patterns": [
+        "reset session",
+        "start new session",
+        "clear session"
+      ],
+      "response": [
+        "Clear the accumulated text and start signing again. Reloading the extension can also reset the live detector state."
+      ]
+    },
+    {
+      "patterns": [
+        "what is confidence",
+        "confidence meaning"
+      ],
+      "response": [
+        "Confidence is the classifier's estimated probability for its selected letter. It is a useful signal, not a guarantee."
+      ]
+    },
+    {
+      "patterns": [
+        "why prediction changes",
+        "prediction keeps changing",
+        "unstable prediction"
+      ],
+      "response": [
+        "Rapid movement, partial hand visibility, or poor lighting can make landmark predictions change. Hold the sign steadily for stabilization."
+      ]
+    },
+    {
+      "patterns": [
+        "can it translate sentences",
+        "full sentence translation",
+        "does it understand asl sentences"
+      ],
+      "response": [
+        "The supplied model is primarily a letter classifier. It should not be described as a full unrestricted ASL sentence translation system."
+      ]
+    },
+    {
+      "patterns": [
+        "can it recognize words",
+        "word recognition",
+        "asl words"
+      ],
+      "response": [
+        "The current letter model recognizes A–Y classes. Word-level behavior depends on how detected letters are accumulated and separated."
+      ]
+    },
+    {
+      "patterns": [
+        "gesture model",
+        "what is gesture model",
+        "h5 model"
+      ],
+      "response": [
+        "The project also contains a supplied H5 sequence gesture model. Its labels require the original gesture_labels.txt mapping to name its outputs."
+      ]
+    },
+    {
+      "patterns": [
+        "what is mediapipe",
+        "why mediapipe",
+        "hand landmarks"
+      ],
+      "response": [
+        "MediaPipe Hands detects the hand and provides 21 landmarks. Those landmarks are then normalized and passed to the trained letter classifier."
+      ]
+    },
+    {
+      "patterns": [
+        "how many landmarks",
+        "21 landmarks",
+        "hand points"
+      ],
+      "response": [
+        "Each detected hand provides 21 landmarks, each with x, y, and z coordinates, producing 63 numeric features."
+      ]
+    },
+    {
+      "patterns": [
+        "what model is used",
+        "machine learning model",
+        "classifier"
+      ],
+      "response": [
+        "The supplied ASL letter model is a trained RandomForestClassifier with 63 input features and A–Y classes."
+      ]
+    },
+    {
+      "patterns": [
+        "where is model stored",
+        "model file",
+        "pkl file"
+      ],
+      "response": [
+        "The trained letter classifier is stored locally as asl_letter_model.pkl in the project."
+      ]
+    },
+    {
+      "patterns": [
+        "why python",
+        "why local server",
+        "python detector"
+      ],
+      "response": [
+        "The trained scikit-learn model is a Python pickle model, so the extension sends normalized hand landmarks to a localhost Python process for prediction."
+      ]
+    },
+    {
+      "patterns": [
+        "is local server safe",
+        "localhost security",
+        "127.0.0.1"
+      ],
+      "response": [
+        "The detector server is designed to bind only to 127.0.0.1, so it is intended to accept requests only from the local computer."
+      ]
+    },
+    {
+      "patterns": [
+        "start detector",
+        "start ai detector",
+        "run detector"
+      ],
+      "response": [
+        "On Windows, run setup_ai_detector.bat once to install dependencies, then start_ai_detector.bat before opening the extension."
+      ]
+    },
+    {
+      "patterns": [
+        "detector server error",
+        "localhost error",
+        "model server unavailable"
+      ],
+      "response": [
+        "Make sure start_ai_detector.bat is running and that http://127.0.0.1:8765/health opens successfully."
+      ]
+    },
+    {
+      "patterns": [
+        "python installation",
+        "install python",
+        "python version"
+      ],
+      "response": [
+        "Use Python 3.10 or 3.11 for the local detector setup, then run setup_ai_detector.bat."
+      ]
+    },
+    {
+      "patterns": [
+        "model not loading",
+        "pkl not loading",
+        "classifier error"
+      ],
+      "response": [
+        "Make sure asl_letter_model.pkl is in the same folder as ai_detection_server.py and install the pinned scikit-learn dependency."
+      ]
+    },
+    {
+      "patterns": [
+        "what is chatbot",
+        "how does chatbot work",
+        "assistant chatbot"
+      ],
+      "response": [
+        "The chatbot answers common ASL Meet Assistant questions instantly using predefined local FAQs and can use Chrome on-device AI for questions outside those FAQs."
+      ]
+    },
+    {
+      "patterns": [
+        "why chatbot slow",
+        "chatbot is slow",
+        "ai is slow"
+      ],
+      "response": [
+        "Common questions should use the fast local FAQ system. Chrome AI is reserved for questions that are not matched by the predefined answers."
+      ]
+    },
+    {
+      "patterns": [
+        "chatbot predefined",
+        "faq questions",
+        "common questions"
+      ],
+      "response": [
+        "The chatbot includes a large set of predefined local answers for common camera, ASL, Meet, AI, privacy, and troubleshooting questions."
+      ]
+    },
+    {
+      "patterns": [
+        "general question",
+        "ask anything",
+        "can i ask other questions"
+      ],
+      "response": [
+        "Yes. If a question is not covered by the local FAQs and Chrome's built-in AI is available, the chatbot can try to answer it."
+      ]
+    },
+    {
+      "patterns": [
+        "image upload",
+        "upload image",
+        "send image"
+      ],
+      "response": [
+        "Use the image button to upload a PNG, JPEG, or WebP image. The image can be analyzed by Chrome on-device AI when multimodal AI is supported."
+      ]
+    },
+    {
+      "patterns": [
+        "image not working",
+        "image analysis",
+        "ai image"
+      ],
+      "response": [
+        "Check that the image is PNG, JPEG, or WebP and smaller than 5 MB. Multimodal image analysis also depends on Chrome AI availability."
+      ]
+    },
+    {
+      "patterns": [
+        "voice message",
+        "send voice",
+        "voice input"
+      ],
+      "response": [
+        "Use the voice button to record a short message. The extension stops the microphone after recording and can send the audio to Chrome AI when audio input is supported."
+      ]
+    },
+    {
+      "patterns": [
+        "voice not working",
+        "microphone not working",
+        "voice unavailable"
+      ],
+      "response": [
+        "Allow microphone permission and use a Chrome/device configuration that supports the required on-device audio AI features."
+      ]
+    },
+    {
+      "patterns": [
+        "text to speech",
+        "speak text",
+        "read aloud"
+      ],
+      "response": [
+        "The Speak feature uses the browser's Text-to-Speech capability to read the recognized text aloud through the computer's audio output."
+      ]
+    },
+    {
+      "patterns": [
+        "other participant hear",
+        "will meet hear speech",
+        "speech to meet"
+      ],
+      "response": [
+        "Browser Text-to-Speech plays through the computer's audio output. Reliable injection into Meet's microphone requires an OS-level virtual audio device or routing solution."
+      ]
+    },
+    {
+      "patterns": [
+        "virtual microphone",
+        "virtual audio",
+        "route speech to meet"
+      ],
+      "response": [
+        "A virtual audio device can route generated speech into Google Meet as microphone input. This is separate from the Chrome extension itself."
+      ]
+    },
+    {
+      "patterns": [
+        "automatic speech",
+        "auto speak",
+        "speak automatically"
+      ],
+      "response": [
+        "Automatic speech can be added after recognition is stable, but a manual Speak action is safer because recognition can occasionally be wrong."
+      ]
+    },
+    {
+      "patterns": [
+        "ai unavailable",
+        "chrome ai unavailable",
+        "ai not available"
+      ],
+      "response": [
+        "If Chrome's built-in AI is unavailable, the fast predefined FAQ chatbot and local ASL detection remain usable."
+      ]
+    },
+    {
+      "patterns": [
+        "ai downloading",
+        "model downloading",
+        "chrome ai downloading"
+      ],
+      "response": [
+        "Chrome may need to download its on-device AI model the first time it is used. The chatbot should show the model availability or download state."
+      ]
+    },
+    {
+      "patterns": [
+        "ai privacy",
+        "on device ai",
+        "where ai runs"
+      ],
+      "response": [
+        "The intended Chrome AI path uses the browser's on-device AI capability when available rather than requiring an extension API key."
+      ]
+    },
+    {
+      "patterns": [
+        "prompt injection",
+        "image instructions",
+        "ai security"
+      ],
+      "response": [
+        "Uploaded text, images, and audio are treated as untrusted input. The assistant is instructed not to follow embedded instructions that attempt to override its rules."
+      ]
+    },
+    {
+      "patterns": [
+        "medical question",
+        "health question",
+        "medical advice"
+      ],
+      "response": [
+        "The chatbot can provide general information, but it should not be treated as a medical professional or diagnostic system."
+      ]
+    },
+    {
+      "patterns": [
+        "legal question",
+        "legal advice"
+      ],
+      "response": [
+        "The chatbot can provide general information, but important legal decisions should be checked with a qualified professional."
+      ]
+    },
+    {
+      "patterns": [
+        "financial question",
+        "financial advice"
+      ],
+      "response": [
+        "The chatbot can explain general concepts, but financial decisions should be verified with a qualified professional."
+      ]
+    },
+    {
+      "patterns": [
+        "what does clear do",
+        "clear button",
+        "clear function"
+      ],
+      "response": [
+        "Clear removes the accumulated detected text so you can begin a new phrase."
+      ]
+    },
+    {
+      "patterns": [
+        "what does copy do",
+        "copy button",
+        "copy function"
+      ],
+      "response": [
+        "Copy copies the accumulated detected text to the clipboard."
+      ]
+    },
+    {
+      "patterns": [
+        "what does space do",
+        "space button",
+        "space function"
+      ],
+      "response": [
+        "Space adds a separator between detected words."
+      ]
+    },
+    {
+      "patterns": [
+        "tips for signing",
+        "better signing"
+      ],
+      "response": [
+        "Keep the hand fully visible, use steady movements, maintain good lighting, and hold static signs long enough for stabilization."
+      ]
+    },
+    {
+      "patterns": [
+        "hand too close",
+        "hand too far",
+        "camera distance"
+      ],
+      "response": [
+        "Move the hand to a comfortable distance where all fingers are visible and the camera can track the complete hand."
+      ]
+    },
+    {
+      "patterns": [
+        "multiple hands",
+        "two hands",
+        "more than one hand"
+      ],
+      "response": [
+        "The current browser detector is configured for one hand, matching the supplied working detection setup."
+      ]
+    },
+    {
+      "patterns": [
+        "background movement",
+        "moving background",
+        "tracking issues"
+      ],
+      "response": [
+        "Avoid fast-moving objects behind the hand and keep the scene visually simple to help tracking remain stable."
+      ]
+    },
+    {
+      "patterns": [
+        "session count",
+        "sign count",
+        "how many signs"
+      ],
+      "response": [
+        "The interface keeps a session count of confirmed detected signs."
+      ]
+    },
+    {
+      "patterns": [
+        "streak",
+        "daily streak",
+        "streak count"
+      ],
+      "response": [
+        "The interface can display the stored streak value. It is separate from the ASL classifier's prediction confidence."
+      ]
+    },
+    {
+      "patterns": [
+        "supported browser",
+        "which browser",
+        "chrome"
+      ],
+      "response": [
+        "This project is designed for Google Chrome because it uses Chrome extension APIs and Chrome's built-in AI where available."
+      ]
+    },
+    {
+      "patterns": [
+        "why not firefox",
+        "firefox support",
+        "other browser"
+      ],
+      "response": [
+        "The current implementation targets Chrome and Google Meet, so other browsers may not support all extension and AI features."
+      ]
+    },
+    {
+      "patterns": [
+        "api security",
+        "api key security",
+        "secret key"
+      ],
+      "response": [
+        "No provider API key is required for the local ASL detector or the intended on-device Chrome AI path. Secrets should never be embedded in a client-side extension."
+      ]
+    },
+    {
+      "patterns": [
+        "what data sent localhost",
+        "landmarks sent",
+        "localhost data"
+      ],
+      "response": [
+        "The browser sends the 21 detected hand landmarks to the local Python detector so the supplied RandomForest model can classify them."
+      ]
+    },
+    {
+      "patterns": [
+        "does model upload",
+        "cloud model",
+        "model online"
+      ],
+      "response": [
+        "The supplied ASL letter model is stored and loaded locally. The localhost detector does not send the model to a cloud service."
+      ]
+    },
+    {
+      "patterns": [
+        "why model bridge",
+        "python bridge",
+        "local prediction"
+      ],
+      "response": [
+        "The Python bridge is needed because a scikit-learn pickle model cannot be executed directly by browser JavaScript."
+      ]
+    },
+    {
+      "patterns": [
+        "how detection works",
+        "detection pipeline",
+        "asl pipeline"
+      ],
+      "response": [
+        "MediaPipe extracts 21 hand landmarks, the landmarks are normalized relative to the wrist, and the supplied RandomForest model predicts the letter."
+      ]
+    },
+    {
+      "patterns": [
+        "normalization",
+        "landmark normalization",
+        "feature preprocessing"
+      ],
+      "response": [
+        "The supplied preprocessing subtracts the wrist coordinates and scales the relative coordinates by the maximum absolute value, producing 63 normalized features."
+      ]
+    },
+    {
+      "patterns": [
+        "random forest",
+        "randomforest",
+        "classifier algorithm"
+      ],
+      "response": [
+        "The supplied letter classifier is a Random Forest model trained to classify the normalized 63-feature hand landmark vector."
+      ]
+    },
+    {
+      "patterns": [
+        "model classes",
+        "25 classes",
+        "a to y"
+      ],
+      "response": [
+        "The supplied Random Forest model has 25 classes: A through Y."
+      ]
+    },
+    {
+      "patterns": [
+        "why no z",
+        "z missing"
+      ],
+      "response": [
+        "The supplied classifier has 25 classes A through Y. A Z class is not present in the uploaded model."
+      ]
+    },
+    {
+      "patterns": [
+        "gesture labels missing",
+        "gesture_labels.txt",
+        "gesture label file"
+      ],
+      "response": [
+        "The supplied Python code expects gesture_labels.txt for the H5 gesture model. Without that mapping, gesture names should not be guessed."
+      ]
+    }
+  ]
+}
